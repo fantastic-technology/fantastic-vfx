@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.super-hero{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    font-size: larger;
+}
+.title{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title p{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.vfx-box1 p{
+    font-weight: bold;
+}
+.vfx-box1{
+    background: linear-gradient(rgb(0, 0, 0), rgb(70, 70, 70));
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.d1{
+    padding: 7px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.v1{
+    height: 200px;
+}
+.bar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+@media screen and (max-width: 950px) {
+    .bar1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 40px;
+    }
+    .v1{
+        height: 150px;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .info p{
+        display: none;
+    }
+    .super-hero{
+        font-size: medium;
+    }
+}

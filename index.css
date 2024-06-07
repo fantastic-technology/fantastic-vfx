@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(58, 58, 58);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+.profile{
+    height: 50px;
+    border-radius: 50em;
+}
+.name{
+    color: white;
+    letter-spacing: 5px;
+    font-size: xx-large;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title p{
+    color: white;
+}
+.search{
+    width: 30vw;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srch{
+    background-color: black;
+    padding: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.hero{
+    background: url(./images/ExplosionCarChase_md.jpg);
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    background-repeat: no-repeat;
+}
+.vfx-bar{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.tip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+}
+.vfx-box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sup{
+    background: url(./images/CreatorKitThumbnailSuperpower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.sup:hover, .act:hover, .sci:hover{
+    scale: 1.1;
+    transition: 1s ease-in-out;
+}
+.act{
+    background: url(./images/ExplosionCarChase_md.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 60px;
+    border-radius: 5px;
+}
+.sci{
+    background: url(./images/Hologram_md.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 80px;
+    border-radius: 5px;
+    color: white;
+}
+.vfx-row{
+    padding: 40px;
+}
+.options{
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.opt{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.opt p{
+    width: 30vw;
+}
+.vfx1, .music1{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    color: white;
+    width: 10vw;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+}
+.sound1{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    color: white;
+    width: 20vw;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;  
+}
+.bar1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.vfx-girl{
+    height: 300px;
+}
+.vfx-girl:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.footer{
+    background-color: black;
+    padding: 30px;
+}
+.namef, .cat, .pop, .follow{
+    font-size: larger;
+    font-weight: bolder;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+.li1, .li2, .li3, .li4{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+}
+button{
+    cursor: pointer;
+}
+.row1{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+}
+.row2{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+@media screen and (max-width:950px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile{
+        display: none;
+    }
+    .search{
+        width: 70vw;
+        padding: 10px;
+    }
+    .hero{
+        background: url(./images/ExplosionCarChase_md.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .tip{
+        text-align: center;
+    }
+    .vfx-box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-around;
+    }
+    .sci{
+        padding: 100px;
+        width: 320px;
+    }
+    .sup, .act, .sci{
+        font-size: 50px;
+    }
+    .vfx-girl{
+        display: none;
+    }
+    .opt{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .opt p{
+        width: 60vw;
+        text-align: center;
+        font-size: large;
+    }
+    .bar1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vfx1, .music1{
+        width: 40vw;
+    }
+    .sound1{
+        width: 40vw;
+        font-size: medium;
+    }
+    .options{
+        background: url(./images/VFX-girl.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .row1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    .row2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 50px;
+        align-items: center;
+    }
+}
