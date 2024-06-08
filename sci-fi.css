@@ -6,7 +6,6 @@
 }
 .sci-fi{
     background-color: black;
-    height: 100vh;
     padding: 20px;
     color: white;
 }
@@ -19,4 +18,53 @@
 .title{
     font-size: xx-large;
     font-weight: bold;
+}
+video{
+    height: 200px;
+}
+.box1{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(70, 70, 70));
+    padding: 10px;
+    border-radius: 15px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.d1{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+button{
+    border: none;
+}
+.bar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+@media screen and (max-width: 950px) {
+    .bar1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 60px;
+    }
+    video{
+        height: 170px;
+    }
 }
