@@ -83,6 +83,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 100px;
+}
+.vfx-box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
 }
 .sup{
     background: url(./images/CreatorKitThumbnailSuperpower.jpg);
@@ -90,7 +97,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     max-height: 200px;
-    max-width: 500px;
+    max-width:500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +107,7 @@ body{
     border-radius: 5px;
     color: white;
 }
-.sup:hover, .act:hover, .sci:hover{
+.sup:hover, .act:hover, .sci:hover, .apo:hover, .dust:hover,.text:hover{
     scale: 1.1;
     transition: 1s ease-in-out;
 }
@@ -136,14 +143,68 @@ body{
     border-radius: 5px;
     color: white;
 }
+.apo{
+    background: url(./images/Download\ from\ OyePhoto.com\ -\ 1816.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.dust{
+    background: url(./images/dust.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 50px;
+    border-radius: 5px;
+    color: white;
+}
+.text{
+    background: url(./images/text.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 200px;
+    max-width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 50px;
+    border-radius: 5px;
+    color: white;
+}
 .vfx-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
     padding: 40px;
 }
 .options{
     padding: 20px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 80px;
 }
 .opt{
     color: white;
@@ -171,7 +232,7 @@ body{
     background-color: rgba(0, 0, 0, 0.514);
     padding: 10px;
     color: white;
-    width: 20vw;
+    width: 15vw;
     font-weight: bold;
     font-size: large;
     border-radius: 5px;  
@@ -207,7 +268,7 @@ a{
     align-items: center;
     justify-content: space-around;
     border-bottom: 2px solid gray;
-    padding: 10px;
+    padding: 15px;
 }
 .li1, .li2, .li3, .li4{
     color: white;
@@ -230,6 +291,8 @@ button{
     display: flex;
     justify-content: space-around;
     gap: 100px;
+    position: relative;
+    top: 10px;
 }
 @media screen and (max-width:950px) {
     .navbar{
@@ -313,8 +376,22 @@ button{
     .row2{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        gap: 50px;
+        justify-content: center;
+        gap: 110px;
         align-items: center;
+    }
+    .lists{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    .li4{
+        gap: 10px;
+        position: relative;
+        bottom: 15px;
+    }
+    .dust{
+        padding: 50px;
     }
 }

@@ -29,7 +29,7 @@
     padding: 20px;
     gap: 10px;
     border-radius: 5px;
-    font-size: large
+    font-size: large;
     font-weight: lighter;
 }
 .music-box1, .music-box2{
@@ -42,7 +42,7 @@
     padding: 20px;
 }
 .ac{
-    height: 120px;
+    height: 150px;
     border-radius: 10px;
 }
 .d-box1{
