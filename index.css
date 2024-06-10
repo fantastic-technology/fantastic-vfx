@@ -7,7 +7,33 @@
 body{
     background-color: rgb(58, 58, 58);
 }
-
+ul{
+    list-style: none;
+    color: black;
+    font-size: large;
+}
+.menu li{
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu a{
+    color: black;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 255, 0.297);
+}
+.function-search{
+    position: absolute;
+    top: 60px;
+    left: 600px;
+}
+.menu{
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .logo-name{
     text-align: center;
 }
@@ -15,8 +41,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    gap: 500px;
     border-bottom: 1px solid grey;
+    height: 20vh;
 }
 .profile{
     height: 50px;
@@ -349,6 +376,16 @@ button{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 10px;
+        height: 40vh;
+    }
+    .function-search{
+        position: absolute;
+        top: 170px;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+       
     }
     .profile{
         display: none;
