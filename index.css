@@ -394,4 +394,12 @@ button{
     .dust{
         padding: 50px;
     }
+    .vfx-box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 70px;
+    }
+    
 }
