@@ -377,7 +377,7 @@ button{
         flex-direction: column;
         gap: 20px;
         padding: 10px;
-        height: 40vh;
+        height: 20vh;
     }
     .function-search{
         position: absolute;
