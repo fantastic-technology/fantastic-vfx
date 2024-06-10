@@ -45,6 +45,9 @@
     height: 140px;
     border-radius: 10px;
 }
+.ac1{
+    height: 120px;
+}
 .d-box1{
     display: flex;
     align-items: center;
@@ -80,5 +83,13 @@ button{
         justify-content: space-around;
         gap: 50px;
         padding: 20px;
+    }
+    .d-box1{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    .ac{
+        height: 150px;
     }
 }
