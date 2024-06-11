@@ -1,30 +1,13 @@
-const searchInput = document.querySelector('.search');
-const menuItems = document.querySelectorAll('.menu li');
-
-// Hide menu items initially
-menuItems.forEach(item => {
-    item.style.display = 'none';
-});
-
-const filterMenuItems = () => {
-    const filter = searchInput.value.toLowerCase();
-    let hasVisibleItems = false;
-    menuItems.forEach(item => {
-        if (item.textContent.toLowerCase().includes(filter)) {
-            item.style.display = '';
-            hasVisibleItems = true;
-        }
-         else {
-            item.style.display = 'none';
-        }
-    });
-
-    // If the input is empty, hide all items
-    if (filter === '') {
-        menuItems.forEach(item => {
-            item.style.display = 'none';
-        });
+let user;
+function userChange() {
+    let userNameElement = document.querySelector('.user-name');
+    const userInp = document.querySelector('.user').value;
+    localStorage.setItem("userName", userInp)
+    if(!userInp){
+        user = 'Default user'
+    }else{
+        user = localStorage.getItem("userName")
     }
-};
-
-searchInput.addEventListener('input', filterMenuItems);
+    userNameElement.textContent = user
+    }
+    document.querySelector('.user-name').textContent = localStorage.getItem("userName")
