@@ -4,7 +4,7 @@ function userChange() {
     const userInp = document.querySelector('.user').value;
     localStorage.setItem("userName", userInp)
     if(!userInp){
-        user = 'Default user'
+        user = 'User'
     }else{
         user = localStorage.getItem("userName")
     }
