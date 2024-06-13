@@ -9,16 +9,34 @@
 </head>
 <body>
     <section class="section">
-        <nav class="user-name">User</nav>
         <section class="user-tab">
-            <input type="name" class="user" placeholder="User">
+            <nav class="user-name">User</nav>
+            <div class="form1">
+                <p>User-profile</p>
+            <input class="user-inp" type="name"class="user" placeholder="User">
            <div class="btn-interface1">
             <button class="btn-es" onclick="userChange();">edit and save</button>
            </div>
             <div class="downloads">
                 <p>Downloads: <span class="download-count">0</span></p>
             </div>
+            </div>
         </section>
+
+        <div class="problem">
+            <p class="pr">Report a Problem</p>
+            <form class="report">
+                <label>Name</label>
+                <input type="text" required name="name">
+                <label>Email</label>
+                <input type="email" required name="email">
+                <label>Purpose</label>
+                <input type="text" required name="text">
+                <label>Message</label>
+                <textarea name="" id=""></textarea>
+                <button class="submit-btn">Submit</button>
+            </form>
+        </div>
     </section>
     <script src="index.js"></script>
 </body>

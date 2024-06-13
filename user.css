@@ -5,13 +5,15 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .section{
-    background-color: black;
+    background-color: rgb(28, 27, 27);
     color: white;
-    height: 100vh;
     font-size: large;
     display: flex;
-    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    height: 100vh;
     gap: 20px;
+    padding: 10px;
 }
 .user-name{
     font-size: 40px;
@@ -23,32 +25,102 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     gap: 30px;
-    border: 1px solid white;
+    font-size: larger;
 }
-input{
+.form1{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+.user-inp{
     padding: 10px;
     border-radius: 10px;
     border: none;
-    outline: 2px solid red;
+    outline: 2px solid blue;
 }
 .btn-es{
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     border: none;
-    width: 10vw;
+    width: 12vw;
 }
 .btn-interface1{
     display: flex;
     gap: 10px;
 }
+.problem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pr{
+    color: red;
+    font-size: larger;
+}
+.report{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+}
+.report input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 20vw;
+    outline: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.submit-btn{
+    padding: 10px;
+    width: 10vw;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: red;
+    transition: 0.5 ease-in-out;
+}
 @media screen and (max-width: 950px) {
     .btn-es{
-        padding: 5px;
+        padding: 10px;
         border-radius: 10px;
         border: none;
-        width: 30vw;
+        width: 42vw;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+        padding: 10px;
+    }
+    .report input, textarea{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        width: 60vw;
+        outline: none;
+    }
+    .submit-btn{
+        width: 20vw;
     }
 }

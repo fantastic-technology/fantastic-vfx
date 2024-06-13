@@ -1,11 +1,12 @@
 let user;
 function userChange() {
     let userNameElement = document.querySelector('.user-name');
-    const userInp = document.querySelector('.user').value;
+    const userInp = document.querySelector('.user-inp').value;
     localStorage.setItem("userName", userInp)
     if(!userInp){
         user = 'User'
-    }else{
+    }
+    else{
         user = localStorage.getItem("userName")
     }
     userNameElement.textContent = user
