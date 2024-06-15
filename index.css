@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.user-name{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .logo{
     height: 20px;
 }
@@ -268,6 +273,7 @@ ul{
     max-height: 400px;
     max-width: 700px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
@@ -276,9 +282,15 @@ ul{
     font-weight: bold;
     cursor: pointer;
 }
+.coming{
+    display: none;
+}
 .go-to-course:hover{
     transition: 0.5s ease-in-out;
     scale: 1.1;
+    .coming{
+        display: flex;
+    }
 }
 .options{
     padding: 20px;
@@ -401,7 +413,7 @@ button{
         padding: 10px;
     }
     .hero{
-        background: url(./images/ExplosionCarChase_md.jpg);
+        background: url(./images/Download\ from\ OyePhoto.com\ -\ 1816.jpg);
         background-size: cover;
         height: 100vh;
         width: 100%;
