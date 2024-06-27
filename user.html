@@ -25,33 +25,19 @@
 
         <div class="problem">
             <p class="pr">Report a Problem</p>
-            <form class="report" onsubmit="sendEmail(event)">
+            <form class="report"  action="https://forms-io.onrender.com/submit-form/635b3778-23b3-40ab-ac38-2e3fd76f922d" method="POST">
                 <label>Name</label>
-                <input class="name" type="text" required name="name">
+                <input type="text" required name="name">
                 <label>Email</label>
-                <input class="email" type="email" required name="email">
+                <input type="email" required name="email">
                 <label>Purpose</label>
-                <input class="purpose" type="text" required name="text">
+                <input type="text" required name="text">
                 <label>Message</label>
-                <textarea name="" class="message"></textarea>
+                <textarea name="" id=""></textarea>
                 <button class="submit-btn">Submit</button>
             </form>
         </div>
     </section>
     <script src="index.js"></script>
-    <script>
-        function sendEmail(event) {
-            event.preventDefault();
-
-            const name = document.querySelector('.name').value;
-            const email = document.querySelector('.email').value;
-            const purpose = document.querySelector('.purpose').value;
-            const message = document.querySelector('.message').value;
-
-            const mailtoLink = `mailto:akoredejamaldeen5@gmail.com?subject=${encodeURIComponent(purpose)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message)}`;
-
-            window.location.href = mailtoLink;
-        }
-    </script>
 </body>
 </html>
