@@ -33,3 +33,13 @@ function download() {
     const storedDownloads = parseInt(localStorage.getItem('userDownloads')) || 0;
     userDownloadElement.textContent = storedDownloads;
 })();
+
+function hi(){
+    const preloader = document.querySelector(".preloader")
+    if(navigator.onLine){
+        preloader.style.display = "none"
+    }
+    else{
+        preloader.style.display = "flex"
+    }
+}
